@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Event Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Magical Event Kingdom</h1>
+        <p>Explore the wonders of JavaScript events!</p>
+        <div id="secret-message" class="hidden">🎉 You found the secret! 🎉</div>
+    </header>
+
+    <main>
+        <section id="button-playground" class="section">
+            <h2>Button Playground 🎈</h2>
+            <button id="color-changer" class="fancy-button">Change My Color</button>
+            <button id="text-changer" class="fancy-button">Change My Text</button>
+            <button id="secret-button" class="fancy-button">Double-Click Me</button>
+            <div id="key-monitor">
+                <p>Press any key: <span id="key-display">waiting...</span></p>
+            </div>
+        </section>
+
+        <section id="image-gallery" class="section">
+            <h2>Image Gallery 🖼️</h2>
+            <div class="gallery-container">
+                <button id="prev-btn" class="gallery-btn">❮</button>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Image+1" alt="Gallery Image 1" class="gallery-image active">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Image+2" alt="Gallery Image 2" class="gallery-image">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Image+3" alt="Gallery Image 3" class="gallery-image">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Image+4" alt="Gallery Image 4" class="gallery-image">
+                </div>
+                <button id="next-btn" class="gallery-btn">❯</button>
+            </div>
+            <div class="dots-container" id="dots"></div>
+        </section>
+
+        <section id="tabs-section" class="section">
+            <h2>Content Tabs 📑</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content">
+                <div id="tab1" class="content active">
+                    <h3>Welcome to Tab 1</h3>
+                    <p>This is the content for the first tab. Try clicking the other tabs to see more content!</p>
+                </div>
+                <div id="tab2" class="content">
+                    <h3>Exploring Tab 2</h3>
+                    <p>You've discovered the second tab's hidden content. Congratulations!</p>
+                </div>
+                <div id="tab3" class="content">
+                    <h3>Final Tab</h3>
+                    <p>This is the last tab. Thanks for exploring all the tabs!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-section" class="section">
+            <h2>Magic Registration Form 📋✅</h2>
+            <form id="magic-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <span class="validation-message" id="username-validation"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="validation-message" id="email-validation"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="validation-message" id="password-validation"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="validation-message" id="confirm-validation"></span>
+                </div>
+                <div class="password-strength">
+                    <div class="strength-meter">
+                        <div id="strength-bar"></div>
+                    </div>
+                    <span id="strength-text">Password strength</span>
+                </div>
+                <button type="submit" id="submit-btn" class="fancy-button">Register</button>
+            </form>
+            <div id="form-message" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with 💖 and JavaScript</p>
+        <p class="hover-me">Hover over me for a surprise!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
